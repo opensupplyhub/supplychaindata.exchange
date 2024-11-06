@@ -27,16 +27,12 @@
                         "description": "Accepted location identifier, which can be a single string (e.g., 'osid:XXXXXXXX', 'gfid:XXXXXXXX') or an array of such strings (osid stands for open supply hub ID, and gfid for Global Field ID)",
                         "anyOf": [
                             {
-                                "type": "string",
-                                "pattern": "^(osid|gfid):[A-Za-z0-9]+$",
-                                "description": "A single location identifier string with a specific prefix (e.g., 'osid:' or 'gf-id:')"
+                                "$ref": "#/definitions/location-identifier"
                             },
                             {
                                 "type": "array",
                                 "items": {
-                                    "type": "string",
-                                    "pattern": "^(osid|gf-id):[A-Za-z0-9]+$",
-                                    "description": "Each item in the array must be a location identifier string with a specific prefix"
+                                    "$ref": "#/definitions/location-identifier"
                                 },
                                 "minItems": 1,
                                 "description": "An array of location identifier strings"
@@ -259,5 +255,12 @@
     },
     "required": [
         "locations"
-    ]
+    ],
+    "definitions": {
+        "location-identifier": {
+            "type": "string",
+            "pattern": "^(osid|gfid):[A-Za-z0-9]+$",
+            "description": "A location identifier string with a specific prefix (e.g., 'osid:', 'gfid:')"
+        }
+    }
 }

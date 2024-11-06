@@ -1,0 +1,41 @@
+[tool.poetry]
+name = "scdex"
+version = "0.1.0"
+description = "This is a Python-based test suite to perform unit and regression testing against the Supply Chain Data Exchange schema."
+authors = ["Nate Ferrell <nate@scrthq.com>"]
+packages = [{include = "scdex"}]
+
+license = "CC0-1.0"
+classifiers = [
+    "Framework :: Pytest",
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Topic :: Software Development :: Testing",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Programming Language :: Python :: Implementation :: PyPy",
+    "License :: CC0 1.0 Universal (CC0 1.0) Public Domain Dedication",
+]
+readme = "../README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+jsonschema = "^4.23.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.3"
+pytest-html = "^4.1.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+addopts = "-ra --junit-xml=junit.xml --html=report.html --self-contained-html"

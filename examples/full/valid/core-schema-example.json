@@ -1,4 +1,5 @@
 {
+  "$schema": "../../../schema/core-schema.json",
   "locations": [
     {
       "guid": "82d39ac8-1a12-4801-835a-85d319927548",
@@ -16,7 +17,7 @@
         "Ironing",
         "Knitting"
       ],
-      "location-identifier": "os-id:CN2021250D1DTN7",
+      "location-identifier": "osid:CN2021250D1DTN7",
       "name": "Huai An Yuan Tong Headwear Mfg. Co., Ltd.",
       "coordinates": {
         "latitude": 33.7862099,

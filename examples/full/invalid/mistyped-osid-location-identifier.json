@@ -1,0 +1,42 @@
+{
+  "$schema": "../../../schema/core-schema.json",
+  "locations": [
+    {
+      "guid": "82d39ac8-1a12-4801-835a-85d319927548",
+      "location-type": "factory",
+      "language": "en",
+      "products": [
+        "Accessories",
+        "Hats"
+      ],
+      "processing-types": [
+        "Final Product Assembly",
+        "Cutting",
+        "Embroidery",
+        "Finishing",
+        "Ironing",
+        "Knitting"
+      ],
+      "location-identifier": "os-id:CN2021250D1DTN7",
+      "name": "Huai An Yuan Tong Headwear Mfg. Co., Ltd.",
+      "coordinates": {
+        "latitude": 33.7862099,
+        "longitude": 119.2787399
+      },
+      "address": {
+        "street-name": "Yan Huang Avenue",
+        "building-number": "No.30 & 32 & 99",
+        "town-name": "Huaian",
+        "country-sub-division": "Jiangsu",
+        "country": "CN",
+        "address-line": [
+          "No.30 & 32 & 99 Yan Huang Avenue",
+          "Lian Shui Economic Developmental District",
+          "Huaian, Jiangsu - China"
+        ]
+      }
+    }
+  ],
+  "organizations": [],
+  "affiliations": []
+}

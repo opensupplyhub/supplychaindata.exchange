@@ -1,0 +1,71 @@
+name: Run Tests
+
+on:
+  # Allows manual triggering of workflow
+  workflow_dispatch: {}
+  # Trigger on push to any branch
+  push:
+    branches:
+      - '*'
+  # Trigger on pull request to any branch
+  pull_request:
+    branches:
+      - '*'
+
+defaults:
+  run:
+    working-directory: 'tests'
+
+permissions:
+  contents: read
+  pull-requests: write
+  statuses: write
+  checks: write
+
+jobs:
+  test-scdex-schema:
+    name: Run SCDEX Schema Tests
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pull-requests: write
+      statuses: write
+      checks: write
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: 3.12
+      - name: Install Poetry
+        run: |
+          curl -sSL https://install.python-poetry.org | python3 -
+      - name: Install dependencies
+        run: poetry install
+      - name: Run tests
+        run: poetry run pytest
+
+      # - name: Upload JUnitXML Test Results
+      #   uses: dorny/test-reporter@v1
+      #   if: ${{ !cancelled() }}
+      #   continue-on-error: true
+      #   with:
+      #     name: Test Results
+      #     path: 'tests/junit.xml'
+      #     reporter: java-junit
+      #     fail-on-error: true
+
+      - name: Publish Test Report
+        uses: mikepenz/action-junit-report@v5.0.0-b01
+        if: ${{ !cancelled() }}
+        with:
+          report_paths: '**/junit.xml'
+          require_tests: true
+          fail_on_failure: true
+          check_name: 'SCDEX Schema Test Report'
+          job_summary: true
+          detailed_summary: true
+          flaky_summary: true
+          comment: true
+          updateComment: true
+          annotate_notice: true

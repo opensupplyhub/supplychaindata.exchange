@@ -40,6 +40,7 @@ Optional fields are helpful for cross referencing or appending data attributes o
 | `name`         | Name of the location, if available. | Optional             |
 | `address`      | the address of the location in ISO 20022 | Optional             |
 | `country`      | the country of the location in ISO 3166 ALpha-2 or Alpha-3 | Optional             |
+| `sector` | The sector of activities conducted at the location (textiles, raw materials, agricultural, etc)   | Optional|
 | `processing-types` | Processing activities conducted at the location    | Optional              |
 | `products`         | Products produced at the location                  | Optional              |
 

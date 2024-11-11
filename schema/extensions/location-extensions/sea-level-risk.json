@@ -1,0 +1,46 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "title": "Extension Schema for Sea Level Risk",
+    "description": "Schema for sea level risk information related to a specific region.",
+    "type": "object",
+    "properties": {
+        "region": {
+            "type": "string",
+            "description": "The name of the region under sea level risk."
+        },
+        "projected-underwater-date": {
+            "type": "string",
+            "format": "date",
+            "description": "The projected date by which the region is expected to be underwater."
+        },
+        "yearly-impact": {
+            "type": "array",
+            "description": "An array of yearly impacts showing the percentage affected per year.",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "year": {
+                        "type": "integer",
+                        "description": "The year for which the impact is estimated."
+                    },
+                    "percentage-affected": {
+                        "type": "number",
+                        "description": "The percentage of the region expected to be affected in the given year.",
+                        "minimum": 0
+                    }
+                },
+                "required": [
+                    "year",
+                    "percentage-affected"
+                ],
+                "additionalProperties": true
+            }
+        }
+    },
+    "required": [
+        "region",
+        "projected-underwater-date",
+        "yearly-impact"
+    ],
+    "additionalProperties": true
+}

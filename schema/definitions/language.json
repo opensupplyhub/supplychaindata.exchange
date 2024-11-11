@@ -1,0 +1,7 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "title": "Language Schema",
+    "type": "string",
+    "description": "Language code in ISO 639-1 or ISO 639-2 format",
+    "pattern": "^[a-z]{2,3}$"
+}

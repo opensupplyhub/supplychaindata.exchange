@@ -1,0 +1,48 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "title": "Organization Schema",
+    "type": "object",
+    "properties": {
+        "guid": {
+            "type": "string",
+            "format": "uuid",
+            "description": "Unique identifier for the organization"
+        },
+        "language": {
+            "$ref": "../definitions/language.json"
+        },
+        "organization-type": {
+            "type": "string",
+            "description": "Type of organization (e.g., supplier, retailer)"
+        },
+        "name": {
+            "type": "string",
+            "description": "Name of the organization, if available"
+        },
+        "address": {
+            "$ref":"../definitions/address.json"
+        },
+        "organizational-identifier": {
+            "description": "Accepted organizational identifier (e.g., LEI, GLN, CRN)",
+            "anyOf": [
+                {
+                    "$ref": "../definitions/organization-identifier"
+                },
+                {
+                    "type": "array",
+                    "items": {
+                        "$ref": "../definitions/organization-identifier"
+                    },
+                    "minItems": 1,
+                    "description": "An array of organization identifier strings"
+                }
+            ]
+        }
+    },
+    "required": [
+        "guid",
+        "organization-type",
+        "organizational-identifier"
+    ],
+    "additionalProperties": true
+}

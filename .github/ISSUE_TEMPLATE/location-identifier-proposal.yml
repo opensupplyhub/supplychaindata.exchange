@@ -51,7 +51,7 @@ body:
     attributes:
       label: Price of Registering an Identifier
       description: Specify the cost associated with registering a new identifier.
-      placeholder: e.g., $50 per registration
+      placeholder: e.g., free or $30 per registration
     validations:
       required: true
 

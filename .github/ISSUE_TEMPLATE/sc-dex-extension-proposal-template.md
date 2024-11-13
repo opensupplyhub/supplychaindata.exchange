@@ -1,9 +1,10 @@
 ---
 name: SC-DEX Extension Proposal Template
-about: Propose a new SC-DEX use case through an extension
-title: "[EXTENSION PROPOSAL] "
-labels: extension
+about: Add a new use case to the SC-DEX by proposing an extension to the core schema
+title: "[Extension Proposal]"
+labels: ''
 assignees: ''
+
 ---
 
 # SC-DEX Extension Proposal Template

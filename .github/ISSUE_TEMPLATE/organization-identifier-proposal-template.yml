@@ -1,0 +1,98 @@
+name: New Organization Identifier Proposal
+description: Submit a proposal for a new organization identifier in the SC-DEX core schema.
+title: "[Organization Identifier Proposal]: "
+labels: ["organization identifier", "proposal"]
+assignees:
+  - octocat
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for submitting a new organization identifier for consideration in the SC-DEX core schema! Please fill in the details below.
+
+  - type: input
+    id: contact
+    attributes:
+      label: Contact Details
+      description: How can we get in touch with you if we need more info?
+      placeholder: ex. email@example.com
+    validations:
+      required: false
+
+  - type: input
+    id: identifier-name
+    attributes:
+      label: Name of Identifier
+      description: Enter the official name of the organization identifier.
+      placeholder: e.g., Legal Entity Identifier (LEI)
+    validations:
+      required: true
+
+  - type: input
+    id: explainer-link
+    attributes:
+      label: Link to Explainer
+      description: Provide a URL linking to further information or documentation for this identifier.
+      placeholder: e.g., https://www.gleif.org/en/lei/about-lei
+    validations:
+      required: true
+
+  - type: input
+    id: one-liner-description
+    attributes:
+      label: One-liner Description
+      description: Provide a brief description of the organization identifier.
+      placeholder: e.g., "A globally recognized identifier for legal entities involved in financial transactions."
+    validations:
+      required: true
+
+  - type: input
+    id: registration-price
+    attributes:
+      label: Price of Registering an Identifier
+      description: Specify the cost associated with registering a new identifier.
+      placeholder: e.g., free, or $75 per registration
+    validations:
+      required: true
+
+  - type: dropdown
+    id: open-for-use
+    attributes:
+      label: Is the Identifier Open for Use?
+      description: Indicate whether this identifier is publicly available for use.
+      options:
+        - "Yes"
+        - "No"
+    validations:
+      required: true
+
+  - type: input
+    id: issuing-organization
+    attributes:
+      label: Issuing Organization
+      description: Enter the name of the organization responsible for issuing the identifier.
+      placeholder: e.g., Global Legal Entity Identifier Foundation (GLEIF)
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: data-types
+    attributes:
+      label: Types of Data Included
+      description: Select all types of data included in this organization identifier.
+      options:
+        - label: Legal Name
+        - label: Registered Address
+        - label: Registration Authority ID
+        - label: Country of Registration
+        - label: Entity Status
+        - label: Other (please specify in the additional information field)
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional-info
+    attributes:
+      label: Additional Information
+      description: Include any additional relevant information or context about this identifier.
+      placeholder: Provide further details if necessary.

@@ -1,4 +1,12 @@
-# SC-DEX Extension Proposal
+---
+name: SC-DEX Extension Proposal Template
+about: Propose a new SC-DEX use case through an extension
+title: "[EXTENSION PROPOSAL] "
+labels: extension
+assignees: ''
+---
+
+# SC-DEX Extension Proposal Template
 
 | Status        | (Proposed / Accepted / Implemented / Obsolete)       |
 |:--------------|:-----------------------------------------------------|

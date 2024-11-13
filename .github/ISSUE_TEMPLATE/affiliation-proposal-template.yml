@@ -1,0 +1,60 @@
+name: Affiliation Type Submission
+description: Submit a proposal for a new relationship type in the SC-DEX core schema.
+title: "[Relationship Type Proposal]: "
+labels: ["relationship type", "proposal"]
+assignees:
+  - octocat
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for submitting a new relationship type for consideration in the SC-DEX core schema! Please provide the details below.
+
+  - type: input
+    id: relationship-name
+    attributes:
+      label: Name of Relationship
+      description: Enter the name or label for this relationship type.
+      placeholder: e.g., "Supplier Relationship"
+    validations:
+      required: true
+
+  - type: textarea
+    id: relationship-explainer
+    attributes:
+      label: Short Explainer
+      description: Provide a brief description of this relationship type and its purpose.
+      placeholder: Describe what this relationship signifies.
+    validations:
+      required: true
+
+  - type: input
+    id: extended-explainer-link
+    attributes:
+      label: Link to Additional Context
+      description: Optionally, provide a link to a longer explainer or additional information (e.g., from WikiRate).
+      placeholder: e.g., https://wikirate.org/Commons+Supplied_By
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: relationship-scope
+    attributes:
+      label: Scope of Relationship
+      description: Indicate all the type(s) of entities this relationship applies to.
+      options:
+        - label: Organization to Location
+        - label: Location to Location
+        - label: Organization to Organization
+        - label: Multiple Linkages Allowed
+    validations:
+      required: true
+
+  - type: input
+    id: contact
+    attributes:
+      label: Contact Details (Optional)
+      description: How can we get in touch with you if we need more information?
+      placeholder: ex. email@example.com
+    validations:
+      required: false

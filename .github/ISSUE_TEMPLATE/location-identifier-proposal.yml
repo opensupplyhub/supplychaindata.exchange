@@ -3,7 +3,7 @@ description: Submit a proposal for a new location identifier in the SC-DEX core 
 title: "[Location Identifier Proposal]: "
 labels: ["location identifier", "proposal"]
 assignees:
-  - octocat
+  - "octocat"
 body:
   - type: markdown
     attributes:

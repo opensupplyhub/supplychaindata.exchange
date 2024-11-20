@@ -1,0 +1,14 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "title": "Location Extensions Schema",
+    "description": "Consolidated schema for all location extensions.",
+    "type": "object",
+    "properties": {
+        "responsible-recruiting": {
+            "$ref": "location-extensions/responsible-recruiting.json"
+        },
+        "sea-level-risk": {
+            "$ref": "location-extensions/sea-level-risk.json"
+        }
+    }
+}

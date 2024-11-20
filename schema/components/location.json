@@ -1,0 +1,94 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "title": "Location Schema",
+    "type": "object",
+    "properties": {
+        "guid": {
+            "type": "string",
+            "format": "uuid",
+            "description": "Unique identifier for the location data"
+        },
+        "language": {
+            "$ref":"../definitions/language.json"
+        },
+        "location-type": {
+            "type": "string",
+            "description": "Type of location (e.g., factory, warehouse, farm)"
+        },
+        "location-identifier": {
+            "description": "Accepted location identifier, which can be a single string (e.g., 'osid:XXXXXXXX', 'gfid:XXXXXXXX') or an array of such strings (osid stands for open supply hub ID, and gfid for Global Field ID)",
+            "anyOf": [
+                {
+                    "$ref": "../definitions/location-identifier"
+                },
+                {
+                    "type": "array",
+                    "items": {
+                        "$ref": "../definitions/location-identifier"
+                    },
+                    "minItems": 1,
+                    "description": "An array of location identifier strings"
+                }
+            ]
+        },
+        "coordinates": {
+            "type": "object",
+            "description": "Geographic coordinates with latitude and longitude in ISO 6709 format",
+            "properties": {
+                "latitude": {
+                    "type": "number",
+                    "description": "Latitude of the location, ranging from -90 to 90",
+                    "minimum": -90,
+                    "maximum": 90
+                },
+                "longitude": {
+                    "type": "number",
+                    "description": "Longitude of the location, ranging from -180 to 180",
+                    "minimum": -180,
+                    "maximum": 180
+                }
+            },
+            "required": [
+                "latitude",
+                "longitude"
+            ]
+        },
+        "name": {
+            "type": "string",
+            "description": "Name of the location, if available"
+        },
+        "address": {
+            "$ref": "../definitions/address.json"
+        },
+        "country": {
+            "type": "string",
+            "description": "Country code in ISO 3166 Alpha-2 or Alpha-3 format",
+            "pattern": "^[A-Z]{2,3}$"
+        },
+        "processing-types": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            },
+            "description": "Processing activities conducted at the location"
+        },
+        "products": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            },
+            "description": "Products produced at the location"
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "../extensions/location-extensions.json"
+        }
+    ],
+    "required": [
+        "guid",
+        "location-type",
+        "location-identifier"
+    ],
+    "additionalProperties": true
+}

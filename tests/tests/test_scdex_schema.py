@@ -2,7 +2,7 @@ import json
 import jsonschema
 import pytest
 from jsonschema import validate, Draft202012Validator
-from scdex import SCDEX_JSON_SCHEMA, SCDEX_SCHEMA_REPO_ROOT
+from scdex import validator, SCDEX_JSON_SCHEMA, SCDEX_SCHEMA_REPO_ROOT
 
 
 examples_path = SCDEX_SCHEMA_REPO_ROOT.joinpath("examples", "full")
@@ -21,7 +21,7 @@ def test_valid_examples(path_to_validate):
     with open(path_to_validate, 'r') as f:
         data = f.read()
     data = json.loads(data)
-    validate(data, SCDEX_JSON_SCHEMA, cls=Draft202012Validator)
+    validator.validate(data)
 
 
 @pytest.mark.parametrize("path_to_validate", examples_path.glob("invalid/*.json"))
@@ -31,4 +31,4 @@ def test_invalid_examples(path_to_validate):
         data = f.read()
     data = json.loads(data)
     with pytest.raises(jsonschema.exceptions.ValidationError):
-        validate(data, SCDEX_JSON_SCHEMA, cls=Draft202012Validator)
+        validator.validate(data)

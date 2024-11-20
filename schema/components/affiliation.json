@@ -1,0 +1,27 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "title": "Affiliation Schema",
+    "type": "object",
+    "properties": {
+        "from-guid": {
+            "type": "string",
+            "format": "uuid",
+            "description": "Unique identifier for the source entity"
+        },
+        "to-guid": {
+            "type": "string",
+            "format": "uuid",
+            "description": "Unique identifier for the target entity"
+        },
+        "affiliation-type": {
+            "type": "string",
+            "description": "Type of relationship between the entities"
+        }
+    },
+    "required": [
+        "from-guid",
+        "to-guid",
+        "affiliation-type"
+    ],
+    "additionalProperties": true
+}

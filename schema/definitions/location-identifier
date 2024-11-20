@@ -1,0 +1,7 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "title": "Location Identifier Schema",
+    "type": "string",
+    "pattern": "^(osid|gfid):[A-Za-z0-9]+$",
+    "description": "A location identifier string with a specific prefix (e.g., 'osid:', 'gfid:')"
+}

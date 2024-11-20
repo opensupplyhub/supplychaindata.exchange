@@ -1,0 +1,84 @@
+{
+    "$schema": "../../../schema/core-schema.json",
+    "locations": [
+        {
+            "guid": "82d39ac8-1a12-4801-835a-85d319927548",
+            "location-type": "factory",
+            "language": "en",
+            "products": [
+                "Accessories",
+                "Hats"
+            ],
+            "processing-types": [
+                "Final Product Assembly",
+                "Cutting",
+                "Embroidery",
+                "Finishing",
+                "Ironing",
+                "Knitting"
+            ],
+            "location-identifier": "osid:CN2021250D1DTN7",
+            "name": "Huai An Yuan Tong Headwear Mfg. Co., Ltd.",
+            "coordinates": {
+                "latitude": 33.7862099,
+                "longitude": 119.2787399
+            },
+            "address": {
+                "street-name": "Yan Huang Avenue",
+                "building-number": "No.30 & 32 & 99",
+                "town-name": "Huaian",
+                "country-sub-division": "Jiangsu",
+                "country": "CN",
+                "address-line": [
+                    "No.30 & 32 & 99 Yan Huang Avenue",
+                    "Lian Shui Economic Developmental District",
+                    "Huaian, Jiangsu - China"
+                ]
+            },
+            "responsible-recruiting": {
+                "recruitment-fee": 200,
+                "employer-coverage": 150,
+                "initial-contact-date": "2024-01-15",
+                "contract-signing-date": "2024-02-01",
+                "first-paycheck-date": "2024-03-01"
+            }
+        }
+    ],
+    "organizations": [
+        {
+            "guid": "91582fdd-6f72-47cf-a113-f68fe4e74865",
+            "organization-type": "retailer",
+            "language": "en",
+            "organizational-identifier": "lei:3538002LJMRZ83SU0B85"
+        },
+        {
+            "guid": "91582fdd-6f72-47cf-a113-f68fe4e74866",
+            "organization-type": "retailer",
+            "language": "en",
+            "organizational-identifier": "lei:353800ZCXKHDPY0N5218"
+        },
+        {
+            "guid": "91582fdd-6f72-47cf-a113-f68fe4e74867",
+            "organization-type": "retailer",
+            "language": "en",
+            "organizational-identifier": "lei:549300D9GZ4BMLDW5T40"
+        }
+    ],
+    "affiliations": [
+        {
+            "from-guid": "82d39ac8-1a12-4801-835a-85d319927548",
+            "to-guid": "91582fdd-6f72-47cf-a113-f68fe4e74865",
+            "affiliation-type": "is supplier of"
+        },
+        {
+            "from-guid": "82d39ac8-1a12-4801-835a-85d319927548",
+            "to-guid": "91582fdd-6f72-47cf-a113-f68fe4e74866",
+            "affiliation-type": "is supplier of"
+        },
+        {
+            "from-guid": "82d39ac8-1a12-4801-835a-85d319927548",
+            "to-guid": "91582fdd-6f72-47cf-a113-f68fe4e74867",
+            "affiliation-type": "is supplier of"
+        }
+    ]
+}

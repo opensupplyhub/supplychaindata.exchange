@@ -1,0 +1,41 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "title": "Extension Schema for Responsible Recruiting",
+    "description": "Schema for responsible recruiting information at a location.",
+    "type": "object",
+    "properties": {
+        "recruitment-fee": {
+            "type": "number",
+            "description": "The recruitment fee charged to the worker, expressed as a monetary amount.",
+            "minimum": 0
+        },
+        "employer-coverage": {
+            "type": "number",
+            "description": "The amount covered by the employer for recruitment costs.",
+            "minimum": 0
+        },
+        "initial-contact-date": {
+            "type": "string",
+            "format": "date",
+            "description": "The date when the initial contact with the worker was made."
+        },
+        "contract-signing-date": {
+            "type": "string",
+            "format": "date",
+            "description": "The date when the worker signed the employment contract."
+        },
+        "first-paycheck-date": {
+            "type": "string",
+            "format": "date",
+            "description": "The date when the worker received their first paycheck."
+        }
+    },
+    "required": [
+        "recruitment-fee",
+        "employer-coverage",
+        "initial-contact-date",
+        "contract-signing-date",
+        "first-paycheck-date"
+    ],
+    "additionalProperties": true
+}

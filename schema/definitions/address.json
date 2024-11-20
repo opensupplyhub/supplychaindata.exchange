@@ -1,0 +1,43 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "title": "Address Schema",
+    "type": "object",
+    "description": "Address of the location in ISO 20022 format",
+    "properties": {
+        "street-name": {
+            "type": "string",
+            "description": "Street name of the address"
+        },
+        "building-number": {
+            "type": "string",
+            "description": "Building number of the address"
+        },
+        "post-code": {
+            "type": "string",
+            "description": "Postal code of the address"
+        },
+        "town-name": {
+            "type": "string",
+            "description": "Town or city name of the address"
+        },
+        "country-sub-division": {
+            "type": "string",
+            "description": "Subdivision of the country (e.g., state, province)"
+        },
+        "country": {
+            "type": "string",
+            "description": "Country in ISO 3166 Alpha-2 format",
+            "pattern": "^[A-Z]{2}$"
+        },
+        "address-line": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            },
+            "description": "Address lines for unstructured address information"
+        }
+    },
+    "required": [
+        "country"
+    ]
+}

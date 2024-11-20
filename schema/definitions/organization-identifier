@@ -1,0 +1,7 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "title": "Organization Identifier Schema",
+    "type": "string",
+    "pattern": "^(lei|gln|crn):[a-zA-Z0-9]+$",
+    "description": "An organization identifier string with a specific prefix (e.g., 'lei:', 'gln:', 'crn:')"
+}

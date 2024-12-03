@@ -44,4 +44,28 @@ In this case, an organization has different types of affiliations with various l
 
 ---
 
-These diagrams show different ways to structure supply chain relationships in SC-DEX, allowing flexibility depending on the complexity of the data.
+These diagrams show different ways to structure supply chain relationships in SC-DEX, allowing flexibility depending on the complexity of the data. While these common use cases show a mixture of relationships between locations and organizations, we also anticipate the need to express just the relationships between organizations or just between locations, although the case of just locations is rare. That might look like this: 
+
+### **4. Organizations Only**
+
+In this example, multiple organizations are affiliated with each other, without locations attached to them.
+
+![Organizations-Only Diagram](path/to/organizations-only-diagram.png)
+
+- **Organizations**: Represent companies that own or manage the locations.
+- **Affiliation**: Simple relationship such as "is owned by" or "is supplier of".
+
+This case might be helpful in the instance that there are organizations with frequently changing locations, or if it is an organization with no geo-spatial location (i.e. an entirely remote or virtual operation)
+
+---
+
+### **5. Locations Only**
+
+In this example, multiple locations are affiliated with each other, without organizations attached to them.
+
+![Locations-Only Diagram](path/to/Locations-only-diagram.png)
+
+- **Locations**: Different supply chain locations, like multiple factories.
+- **Affiliation**: Simple relationship such as "is within" or "is supplier of".
+
+This is a strange case, as each location is likely to have some kind of organizational identifier associated with it. We don't recommend using SC-DEX for location only expressions, but for the current review period allow this case.

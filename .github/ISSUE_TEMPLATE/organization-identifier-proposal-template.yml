@@ -67,6 +67,15 @@ body:
       required: true
 
   - type: input
+    id: size
+    attributes:
+      label: Approximately how many organizations have been issued an identifier?
+      description: Number of organizations issued an identifier under this system.
+      placeholder: e.g., 1,000,000 (estimations okay)
+    validations:
+      required: false
+
+  - type: input
     id: issuing-organization
     attributes:
       label: Issuing Organization

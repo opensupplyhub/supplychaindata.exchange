@@ -76,6 +76,15 @@ body:
       required: false
 
   - type: input
+    id: coverage
+    attributes:
+      label: Geographic Coverage
+      description: Is this identifier globally adopted, or are there concentrated/limited areas of use?
+      placeholder: e.g., "London, or Brazil, or global, or MENA region"
+    validations:
+      required: false
+
+  - type: input
     id: issuing-organization
     attributes:
       label: Issuing Organization

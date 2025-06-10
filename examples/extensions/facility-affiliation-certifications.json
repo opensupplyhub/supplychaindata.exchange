@@ -1,0 +1,30 @@
+// This extension illustrates how a facility affiliated with a larger campus or industrial park
+// inherits certifications (e.g. LEED, waste management) from that site-level entity.
+// Useful for contextualizing facility-level sustainability performance.
+// Source organization and URL are mocked for demonstration purposes.
+
+{
+  "from-guid": "fac-789e2b3d-0c12-48d1-8d6c-01928a4f5e12",  // GUID of the individual facility
+  "to-guid": "park-4f12a98c-df99-4c5e-b3b3-1b2c63eaa458",    // GUID of the affiliated industrial park
+  "affiliation-type": "is-located-within",
+  "affiliation-extensions": {
+    "site-certifications": [
+      {
+        "certification-name": "LEED Gold",
+        "certification-type": "Energy Efficiency",
+        "certifying-body": "US Green Building Council",
+        "certification-date": "2022-05-12",
+        "expiration-date": "2027-05-12"
+      },
+      {
+        "certification-name": "Hazardous Waste Management Permit",
+        "certification-type": "Environmental Compliance",
+        "certifying-body": "Local Environmental Authority",
+        "certification-date": "2023-03-01",
+        "expiration-date": "2026-03-01"
+      }
+    ],
+    "source-organization": "EcoPark Authority",
+    "source-url": "https://ecopark.example.org/certifications/4f12a98c"
+  }
+}

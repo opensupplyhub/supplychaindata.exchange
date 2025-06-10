@@ -10,6 +10,8 @@ Below are three examples of entity-relationship diagrams showing how locations, 
 
 ### **1. Simple Supply Chain (Single-Tier)**
 
+![Simple Location-Organization Diagram](https://github.com/opensupplyhub/supplychaindata.exchange/blob/6783acbdaac7ad331121dee9927456d56c51a46b/website/locationorganizationsimple.png?raw=true)
+
 In this example, a single location is affiliated with a single organization.
 
 - **Locations**: Represent factories or warehouses.
@@ -22,7 +24,7 @@ In this example, a single location is affiliated with a single organization.
 
 This example demonstrates a more complex supply chain where multiple locations are affiliated with multiple organizations.
 
-![Multi-Tier Diagram](path/to/multi-tier-diagram.png)
+![Multi-Tier Diagram](https://github.com/opensupplyhub/supplychaindata.exchange/blob/28ce6f3635e311919e8583b00dfa4e9ddacba180/website/locationorganizationmulti.png)
 
 - **Locations**: Different supply chain locations, like multiple factories.
 - **Organizations**: Various organizations involved in the supply chain.
@@ -34,7 +36,7 @@ This example demonstrates a more complex supply chain where multiple locations a
 
 In this case, an organization has different types of affiliations with various locations, showing how a single organization can manage multiple types of relationships.
 
-![Complex Affiliation Diagram](path/to/complex-affiliation-diagram.png)
+![Complex Affiliation Diagram](https://github.com/opensupplyhub/supplychaindata.exchange/blob/e989167ca3370c900b093afce07f7707939dd75e/website/complexrelationshiporganization.png)
 
 - **Locations**: Different locations related to the organization.
 - **Organizations**: One organization with multiple types of affiliations.
@@ -48,7 +50,7 @@ These diagrams show different ways to structure supply chain relationships in SC
 
 In this example, multiple organizations are affiliated with each other, without locations attached to them.
 
-![Organizations-Only Diagram](path/to/organizations-only-diagram.png)
+![Organizations-Only Diagram](https://github.com/opensupplyhub/supplychaindata.exchange/blob/41df6fd9b8d7aca36edfbf0bf996941d197d4cb0/website/organizationsonly.png)
 
 - **Organizations**: Represent companies that own or manage the locations.
 - **Affiliation**: Simple relationship such as "is owned by" or "is supplier of".
@@ -61,9 +63,9 @@ This case might be helpful in the instance that there are organizations with fre
 
 In this example, multiple locations are affiliated with each other, without organizations attached to them.
 
-![Locations-Only Diagram](path/to/Locations-only-diagram.png)
+![Locations-Only Diagram](https://github.com/opensupplyhub/supplychaindata.exchange/blob/e610ad87ff2933213b071f638df020fe4c35a174/website/locationonly.png)
 
 - **Locations**: Different supply chain locations, like multiple factories.
 - **Affiliation**: Simple relationship such as "is within" or "is supplier of".
 
-This is a strange case, as each location is likely to have some kind of organizational identifier associated with it. We don't recommend using SC-DEX for location only expressions, but for the current review period allow this case.
+This is a specific case, as each location is likely to have some kind of organizational identifier associated with it. This case would typically be used to express relationships within an industrial campus park, or perhaps a farm processing location within a field, but would still typically have an organization attached. 

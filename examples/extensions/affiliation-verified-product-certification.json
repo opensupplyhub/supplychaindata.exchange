@@ -1,0 +1,13 @@
+// This extension adds a product-level sustainability certification for an affiliation.
+// Could be useful for verifying supply chain claims for traceable goods.
+// Source is mocked for demonstration purposes.
+{
+  "from-guid": "456e4567-e89b-12d3-a456-426614174222",
+  "to-guid": "789e4567-e89b-12d3-a456-426614174333",
+  "certification-name": "TextileExchange Organic Standard",
+  "certification-type": "organic",
+  "certification-status": "valid",
+  "certification-valid-until": "2026-06-30",
+  "source-organization": "Textile Exchange",
+  "source-url": "https://textileexchange.example.org/certifications/organic"
+}

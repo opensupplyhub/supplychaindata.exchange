@@ -1,6 +1,6 @@
 // This extension provides average wage information from an external benchmark source.
 // Applies to the organization and helps compare against living wage thresholds.
-// Source is mocked for demonstration purposes.
+// Source url and data are examples for demonstration purposes only.
 {
   "organization-guid": "789e4567-e89b-12d3-a456-426614174111",
   "average-wage-usd-monthly": 275,

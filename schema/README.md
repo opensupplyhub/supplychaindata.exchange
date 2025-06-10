@@ -12,8 +12,6 @@ Below are three examples of entity-relationship diagrams showing how locations, 
 
 In this example, a single location is affiliated with a single organization.
 
-<img src="https://github.com/opensupplyhub/supplychaindata.exchange/blob/e4a698960bc3499f9860853b25ff8dbc406e0cd6/website/simplelocationorganization.png?raw=true" width="400"/>
-
 - **Locations**: Represent factories or warehouses.
 - **Organizations**: Represent companies that own or manage the locations.
 - **Affiliation**: Simple relationship such as "is owned by" or "is supplier of".

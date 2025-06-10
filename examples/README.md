@@ -42,13 +42,18 @@ This extension tracks data around recruitment fees and the employment process:
 - **Employer Coverage**: Portion of the fee covered by the employer.
 - **Timeline**: Dates of initial contact, contract signing, and first paycheck.
 
+(Data and source url are for example purposes only)
+
 ```json
 {
-  "RecruitmentFee": 200,
-  "EmployerCoverage": 150,
-  "InitialContactDate": "2024-01-15",
-  "ContractSigningDate": "2024-02-01",
-  "FirstPaycheckDate": "2024-03-01"
+  "organization-guid": "523e4567-e89b-12d3-a456-426614174555",
+  "recruitment-fee-usd": 200,
+  "employer-coverage-usd": 150,
+  "initial-contact-date": "2024-01-15",
+  "contract-signing-date": "2024-02-01",
+  "first-paycheck-date": "2024-03-01",
+  "source-organization": "Fair Hiring Network",
+  "source-url": "https://fairhiring.example.org/report/123/org-id/357U8H5Gh"
 }
 ```
 
@@ -62,14 +67,19 @@ This extension layers geographic data on top of the core schema to assess supply
 - **Timing**: Projected date when the location will be underwater.
 - **Impact**: Percentage of locations affected year by year.
 
+(Data and source url are for example purposes only)
+
 ```json
 {
-  "Region": "Coastal Factory Zone",
-  "ProjectedUnderwaterDate": "2030-12-31",
-  "YearlyImpact": [
-    {"Year": 2025, "PercentageAffected": 5},
-    {"Year": 2026, "PercentageAffected": 10},
-    {"Year": 2027, "PercentageAffected": 15}
-  ]
+  "location-guid": "623e4567-e89b-12d3-a456-426614174666",
+  "region": "Coastal Factory Zone",
+  "projected-underwater-date": "2030-12-31",
+  "yearly-impact": [
+    { "year": 2025, "percentage-affected": 5 },
+    { "year": 2026, "percentage-affected": 10 },
+    { "year": 2027, "percentage-affected": 15 }
+  ],
+  "source-organization": "Climate Risk Watch",
+  "source-url": "https://climateriskwatch.example.org/factories/zoneA/20250323"
 }
 ```

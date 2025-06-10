@@ -1,0 +1,12 @@
+// This extension adds third-party safety certification details to a production location.
+// Useful for compliance tracking and audit readiness.
+// Source organization and url is an example for demonstration purposes only.
+{
+  "location-guid": "123e4567-e89b-12d3-a456-426614174000",
+  "certification-name": "SafeFactory 2023",
+  "certification-body": "International Safety Auditors",
+  "certification-status": "valid",
+  "certification-valid-until": "2025-12-31",
+  "source-organization": "Safety Auditors Database",
+  "source-url": "https://safety-auditors.example.org/certifications/123"
+}

@@ -1,3 +1,16 @@
+// This extension provides demographic data for a facility, including gender distribution
+// and employment type counts. Useful for social responsibility and DEI reporting.
+// Source organization, URL, and data are for demonstration purposes only.
 {
-
+  "location-guid": "abc12345-e89b-12d3-a456-426614174999",
+  "total-employees": 430,
+  "full-time-employees": 310,
+  "contract-employees": 120,
+  "gender-breakdown": {
+    "female": 270,
+    "male": 160,
+    "non-binary-or-other": 0
+  },
+  "source-organization": "Social Impact Audit Initiative",
+  "source-url": "https://socialimpact.example.org/facilities/abc12345"
 }

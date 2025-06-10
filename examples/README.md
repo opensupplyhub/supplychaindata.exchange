@@ -6,16 +6,26 @@ This page provides examples of how to implement extensions to the SC-DEX core sc
 
 ## **How to Contribute or Submit an Extension**
 
-We encourage contributions from both technical and non-technical partners. If you are a **technical partner**, you can simply copy the JSON format provided above and customize it for your extension. For non-technical partners, or those new to JSON formatting, you can submit your extension idea through a Google Form.
+We welcome contributions from both technical and non-technical partners interested in expanding the SC-DEX schema to support new use cases. Extensions allow you to add custom fields while maintaining compatibility with the core structure.
 
-To submit an extension, please fill out the form with the following details:
-1. **Name and Organization**: Provide your contact details.
-2. **Extension Purpose**: Describe the purpose of the extension and its intended use case.
-3. **Potential Data Attributes**: List any relevant data fields that should be included in the extension.
+To propose a new extension:
 
-[Submit your extension idea via Google Form](https://docs.google.com/forms/d/e/1FAIpQLSc2k_hCOzvZ2G31Z-IivRDF2c3OMVxG9HCwXXVf3oP_vxeG-A/viewform?usp=sf_link).
+1. **Use the Extension Proposal Template**  
+   Submit your idea directly through our [GitHub Issue Template for Extensions](https://github.com/opensupplyhub/supplychaindata.exchange/issues/new?template=sc-dex-extension-proposal-template.md).
 
-For more details on extensions, visit our [Extensions page](../wiki/Extensions-for-Use-Cases).
+2. **Include These Details**  
+   The template will guide you to provide:
+   - A short description of the extension and its purpose.
+   - The relevant entity (location, organization, or affiliation) it extends.
+   - A list of new fields, their types, and any expected formats.
+   - How this extension aligns with a specific use case or implementation.
+
+3. **Get Feedback and Collaborate**  
+   Once submitted, the SC-DEX community can review, discuss, and help refine the proposal in the comments thread.
+
+For implementation details and examples, visit the [Extensions Implementation Guide](https://github.com/opensupplyhub/supplychaindata.exchange/wiki/7.-Implementation-Tutorials#implementing-extensions).
+
+If you have questions or want to explore ideas before submitting, join our [Slack Community](https://join.slack.com/t/supplychainexchange/shared_invite/zt-2h2f0zvhe-J9ksFAHHtmYCs_I2_Nlr0g).
 
 ---
 

@@ -66,12 +66,12 @@
     {
       "from-guid": "82d39ac8-1a12-4801-835a-85d319927548",
       "to-guid": "91582fdd-6f72-47cf-a113-f68fe4e74866",
-      "affiliation-type": "is supplier of"
+      "affiliation-type": "is within"
     },
     {
       "from-guid": "82d39ac8-1a12-4801-835a-85d319927548",
       "to-guid": "91582fdd-6f72-47cf-a113-f68fe4e74867",
-      "affiliation-type": "is supplier of"
+      "affiliation-type": "is parent company of"
     }
   ]
 }

@@ -2,16 +2,16 @@
 
 ## **About**
 
-The **Supply Chain Data Exchange Standard (SC-DEX)** is an open, machine-readable data exchange standard designed to enable transparent, interoperable, and scalable sharing of supply chain data. The SC-DEX standard provides a flexible format that can be adopted across various industries and sectors, allowing stakeholders to publish, exchange, store and use supply chain data in a standardized way. By utilizing standardized **Location IDs**, **Organizational IDs**, and **Relationship Types**, SC-DEX ensures interoperability between systems, enabling greater transparency, due diligence, and regulatory compliance. As a global and open data exchange standard, the SC-DEX is intended to enables the implementation of new due diligence directives such as the CSDDD, CSDR, and HRDD, and ensures that reporting of and research on supply chains data remains accessible and non-duplicative for both civil society organizations, corporations, policy implementors and auditors, and suppliers alike.
+The **Supply Chain Data Exchange Standard (SC-DEX)** is an open, machine-readable data exchange standard designed to enable transparent, interoperable, and scalable sharing of supply chain data. The SC-DEX standard provides a flexible format that can be adopted across various industries and sectors, allowing stakeholders to publish, exchange, store and use supply chain data in a standardized way. By utilizing standardized **Location IDs**, **Organizational IDs**, and **Relationship Types**, SC-DEX ensures interoperability between systems, enabling greater transparency, due diligence, and regulatory compliance. As a global and open data exchange standard, the SC-DEX is intended to enables the implementation of new due diligence directives covered under Omnibus, and ensures that reporting of and research on supply chains data remains accessible and non-duplicative for both civil society organizations, corporations, policy implementors and auditors, and suppliers alike.
 
 The SC-DEX Technical Standard is made up of:
 - [Governance Model](https://docs.google.com/document/d/1m4GJPTr-9cg9yE2G0cyFhhNl5qFRK6j8phr9oVKKgg4/edit)
 - [Technical Standard Core Schema](https://github.com/opensupplyhub/supplychaindata.exchange/tree/main/schema)
 - [Open Letter of Commitment](https://docs.google.com/document/d/1jRSpEStuhcdS_8SxBHLoW7PWaYlCTEtC1MLYJf_5avo/edit)
 
-As adoption of the SC-DEX schema grows, we are preparing for the next phase of its evolution. In 2025, SC-DEX will expand into a broader ecosystem that includes both a public pledge and a community network. The pledge will outline shared principles around open and responsible data exchange, while the network will provide the collaborative infrastructure needed to maintain, extend, and implement the technical schema effectively.
+As adoption of the SC-DEX schema grows, we are preparing for the next phase of its evolution. In 2025, SC-DEX will explore what a broader network expandsion might look like. If you have suggestions or a perspective to share, please [fill out our survey here:]([https://docs.google.com/document/d/1jRSpEStuhcdS_8SxBHLoW7PWaYlCTEtC1MLYJf_5avo/edit](https://forms.gle/niAKY1gye8qbZxKr8))
 
-This shift reflects what we’ve learned through pilot projects and stakeholder engagement: that technical standards alone are not enough—lasting impact requires collective alignment, transparent governance, and shared tooling. The SC-DEX network will exist to support the schema’s continued relevance and usability across diverse supply chain contexts.
+This shift reflects what we’ve learned through pilot projects and stakeholder engagement: that technical standards alone are not enough—lasting impact requires collective alignment, transparent governance, and shared tooling. The future growth of SC-DEX will exist to support the schema’s continued relevance and usability across diverse supply chain contexts.
 
 Stay tuned for updates and opportunities to participate.
 ---
@@ -49,7 +49,7 @@ For more information on the development process, see the [Development Process pa
 SC-DEX has been developed through a multi-stakeholder, collaborative approach involving various convenings and public work sessions. Key milestones include:
 - **2023**: Dhaka convening established the basic data model for SC-DEX, through a collaboration between Open Supply Hub, Mapped In Bangladesh, and WikiRate
 - **2024**: Convening of 15+ organizations with representation from civil society organization, reporting groups, and data holders and stewards in January. First technical draft (V0) published in August, with V1 published in October after public feedback sessions and multistakeholder interviews and advisory sessions with over 30 organizations.
-- **2025**: Focuses on scaling adoption with a goal of **25 organizations committed** and **10 organizations actively implementing** SC-DEX with the introduction of a pledge and network membership.
+- **2025**: Focuses on scaling adoption with a goal of **25 organizations committed** and **10 organizations actively implementing** SC-DEX
 
 ---
 
